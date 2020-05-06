@@ -1,0 +1,366 @@
+Microsoft Windows [版本 10.0.18362.778]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>Date
+当前日期: 2020/05/06 周三
+输入新日期: (年月日)
+
+C:\Users\Administrator>Time
+当前时间: 23:28:08.83
+输入新时间:
+
+C:\Users\Administrator>systeminfo
+
+主机名:           P-V-4
+OS 名称:          Microsoft Windows 10 专业版
+OS 版本:          10.0.18362 暂缺 Build 18362
+OS 制造商:        Microsoft Corporation
+OS 配置:          独立工作站
+OS 构件类型:      Multiprocessor Free
+注册的所有人:     暂缺
+注册的组织:       暂缺
+产品 ID:          00330-80000-00000-AA449
+初始安装日期:     2019/10/6 星期日, 12:35:54
+系统启动时间:     2020/5/6 星期三, 17:50:14
+系统制造商:       Default string
+系统型号:         Default string
+系统类型:         x64-based PC
+处理器:           安装了 1 个处理器。
+                  [01]: Intel64 Family 6 Model 158 Stepping 9 GenuineIntel ~3504 Mhz
+BIOS 版本:        American Megatrends Inc. 5.12, 2016/12/23 星期五
+Windows 目录:     C:\WINDOWS
+系统目录:         C:\WINDOWS\system32
+启动设备:         \Device\HarddiskVolume1
+系统区域设置:     zh-cn;中文(中国)
+输入法区域设置:   zh-cn;中文(中国)
+时区:             (UTC+08:00) 北京，重庆，香港特别行政区，乌鲁木齐
+物理内存总量:     8,158 MB
+可用的物理内存:   4,273 MB
+虚拟内存: 最大值: 13,022 MB
+虚拟内存: 可用:   7,387 MB
+虚拟内存: 使用中: 5,635 MB
+页面文件位置:     D:\pagefile.sys
+域:               WORKGROUP
+登录服务器:       \\P-V-4
+修补程序:         安装了 11 个修补程序。
+                  [01]: KB4534132
+                  [02]: KB4515383
+                  [03]: KB4516115
+                  [04]: KB4521863
+                  [05]: KB4524569
+                  [06]: KB4528759
+                  [07]: KB4537759
+                  [08]: KB4538674
+                  [09]: KB4541338
+                  [10]: KB4552152
+                  [11]: KB4549951
+网卡:             安装了 3 个 NIC。
+                  [01]: Realtek RTL8188EU Wireless LAN 802.11n USB 2.0 Network Adapter
+                      连接名:      WLAN 5
+                      启用 DHCP:   是
+                      DHCP 服务器: 192.168.1.1
+                      IP 地址
+                        [01]: 192.168.1.10
+                        [02]: fe80::70be:69c:9cea:6296
+                  [02]: Realtek PCIe GBE Family Controller
+                      连接名:      以太网 2
+                      状态:        媒体连接已中断
+                  [03]: Sangfor SSL VPN CS Support System VNIC
+                      连接名:      以太网 3
+                      状态:        媒体连接已中断
+Hyper-V 要求:     虚拟机监视器模式扩展: 是
+                  固件中已启用虚拟化: 是
+                  二级地址转换: 是
+                  数据执行保护可用: 是
+
+C:\Users\Administrator>wmic cpu list brief
+Caption                                DeviceID  Manufacturer  MaxClockSpeed  Name                                     SocketDesignation
+Intel64 Family 6 Model 158 Stepping 9  CPU0      GenuineIntel  3504           Intel(R) Pentium(R) CPU G4560 @ 3.50GHz  U3E1
+
+C:\Users\Administrator>wmic bios list
+BiosCharacteristics                                                      BuildNumber  CodeSet  CurrentLanguage  Description                                 IdentificationCode  InstallableLanguages  InstallDate  LanguageEdition  ListOfLanguages        Manufacturer              Name                                        OtherTargetOS  PrimaryBIOS  ReleaseDate                SerialNumber    SMBIOSBIOSVersion  SMBIOSMajorVersion  SMBIOSMinorVersion  SMBIOSPresent  SoftwareElementID                           SoftwareElementState  Status  TargetOperatingSystem  Version
+{7, 11, 12, 15, 16, 17, 19, 23, 24, 25, 26, 28, 29, 32, 33, 40, 42, 43}                        zh|CN|unicode    BIOS Date: 12/23/16 15:27:03 Ver: 05.0000C                      2                                                   {"zh|CN|unicode", ""}  American Megatrends Inc.  BIOS Date: 12/23/16 15:27:03 Ver: 05.0000C                 TRUE         20161223000000.000000+000  Default string  5.12               3                   0                   TRUE           BIOS Date: 12/23/16 15:27:03 Ver: 05.0000C  3                     OK      0                      ALASKA - 1072009
+
+C:\Users\Administrator>wmic memorychip
+Attributes  BankLabel  Capacity    Caption   ConfiguredClockSpeed  ConfiguredVoltage  CreationClassName     DataWidth  Description  DeviceLocator   FormFactor  HotSwappable  InstallDate  InterleaveDataDepth  InterleavePosition  Manufacturer  MaxVoltage  MemoryType  MinVoltage  Model  Name      OtherIdentifyingInfo  PartNumber      PositionInRow  PoweredOn  Removable  Replaceable  SerialNumber  SKU  SMBIOSMemoryType  Speed  Status  Tag                TotalWidth  TypeDetail  Version
+1           BANK 2     8589934592  物理内存  2400                  1200               Win32_PhysicalMemory  64         物理内存     ChannelB-DIMM0  8                                      0                    0                   017A          1200        0           1200               物理内存                        78.C1GQ5.C7C0B                                                    19717094           26                2400           Physical Memory 2  64          16512
+
+C:\Users\Administrator>wmic diskdrive
+Availability  BytesPerSector  Capabilities  CapabilityDescriptions                 Caption             CompressionMethod  ConfigManagerErrorCode  ConfigManagerUserConfig  CreationClassName  DefaultBlockSize  Description  DeviceID            ErrorCleared  ErrorDescription  ErrorMethodology  FirmwareRevision  Index  InstallDate  InterfaceType  LastErrorCode  Manufacturer      MaxBlockSize  MaxMediaSize  MediaLoaded  MediaType              MinBlockSize  Model               Name                NeedsCleaning  NumberOfMediaSupported  Partitions  PNPDeviceID                                              PowerManagementCapabilities  PowerManagementSupported  SCSIBus  SCSILogicalUnit  SCSIPort  SCSITargetId  SectorsPerTrack  SerialNumber       Signature  Size          Status  StatusInfo  SystemCreationClassName  SystemName  TotalCylinders  TotalHeads  TotalSectors  TotalTracks  TracksPerCylinder
+              512             {3, 4}        {"Random Access", "Supports Writing"}  HFS128G39MND-3510A                     0                       FALSE                    Win32_DiskDrive                      磁盘驱动器   \\.\PHYSICALDRIVE0                                                    20100P00          0                   IDE                           (标准磁盘驱动器)                              TRUE         Fixed hard disk media                HFS128G39MND-3510A  \\.\PHYSICALDRIVE0                                         3           SCSI\DISK&VEN_&PROD_HFS128G39MND-351\4&E14D926&0&000000                                                         0        0                0         0             63               FI6AN05801150AP18  679569435  128034708480  OK                  Win32_ComputerSystem     P-V-4       15566           255         250067790     3969330      255
+
+C:\Users\Administrator>sc query
+
+SERVICE_NAME: Appinfo
+DISPLAY_NAME: Application Information
+        TYPE               : 30  WIN32
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AppXSvc
+DISPLAY_NAME: AppX Deployment Service (AppXSVC)
+        TYPE               : 30  WIN32
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AudioEndpointBuilder
+DISPLAY_NAME: Windows Audio Endpoint Builder
+        TYPE               : 30  WIN32
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Audiosrv
+DISPLAY_NAME: Windows Audio
+        TYPE               : 10  WIN32_OWN_PROCESS
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BFE
+DISPLAY_NAME: Base Filtering Engine
+        TYPE               : 20  WIN32_SHARE_PROCESS
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BrokerInfrastructure
+DISPLAY_NAME: Background Tasks Infrastructure Service
+        TYPE               : 20  WIN32_SHARE_PROCESS
+        STATE              : 4  RUNNING
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BthAvctpSvc
+DISPLAY_NAME: AVCTP 服务
+        TYPE               : 30  WIN32
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CAJ Service Host
+DISPLAY_NAME: CAJ Service Host
+        TYPE               : 10  WIN32_OWN_PROCESS
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+C:\Users\Administrator>ipconfig/all
+
+Windows IP 配置
+
+   主机名  . . . . . . . . . . . . . : P-V-4
+   主 DNS 后缀 . . . . . . . . . . . :
+   节点类型  . . . . . . . . . . . . : 混合
+   IP 路由已启用 . . . . . . . . . . : 否
+   WINS 代理已启用 . . . . . . . . . : 否
+
+以太网适配器 以太网 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . :
+   描述. . . . . . . . . . . . . . . : Realtek PCIe GBE Family Controller #2
+   物理地址. . . . . . . . . . . . . : 00-E0-70-51-5C-C7
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 以太网 3:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . :
+   描述. . . . . . . . . . . . . . . : Sangfor SSL VPN CS Support System VNIC
+   物理地址. . . . . . . . . . . . . : 00-FF-71-37-D0-DD
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 本地连接* 14:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . :
+   描述. . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #6
+   物理地址. . . . . . . . . . . . . : 02-B1-40-21-0B-37
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 本地连接* 15:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . :
+   描述. . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #7
+   物理地址. . . . . . . . . . . . . : 00-B1-40-21-0B-37
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 WLAN 5:
+
+   连接特定的 DNS 后缀 . . . . . . . :
+   描述. . . . . . . . . . . . . . . : Realtek RTL8188EU Wireless LAN 802.11n USB 2.0 Network Adapter #5
+   物理地址. . . . . . . . . . . . . : 00-B1-40-21-0B-37
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::70be:69c:9cea:6296%12(首选)
+   IPv4 地址 . . . . . . . . . . . . : 192.168.1.10(首选)
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   获得租约的时间  . . . . . . . . . : 2020年5月6日 17:50:31
+   租约过期的时间  . . . . . . . . . : 2020年5月9日 17:50:26
+   默认网关. . . . . . . . . . . . . : 192.168.1.1
+   DHCP 服务器 . . . . . . . . . . . : 192.168.1.1
+   DHCPv6 IAID . . . . . . . . . . . : 184594752
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-24-C0-CA-CB-00-E0-70-51-5C-C7
+   DNS 服务器  . . . . . . . . . . . : 192.168.1.1
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+C:\Users\Administrator>route print
+===========================================================================
+接口列表
+ 17...00 e0 70 51 5c c7 ......Realtek PCIe GBE Family Controller #2
+ 14...00 ff 71 37 d0 dd ......Sangfor SSL VPN CS Support System VNIC
+ 24...02 b1 40 21 0b 37 ......Microsoft Wi-Fi Direct Virtual Adapter #6
+  5...00 b1 40 21 0b 37 ......Microsoft Wi-Fi Direct Virtual Adapter #7
+ 12...00 b1 40 21 0b 37 ......Realtek RTL8188EU Wireless LAN 802.11n USB 2.0 Network Adapter #5
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 路由表
+===========================================================================
+活动路由:
+网络目标        网络掩码          网关       接口   跃点数
+          0.0.0.0          0.0.0.0      192.168.1.1     192.168.1.10     55
+        127.0.0.0        255.0.0.0            在链路上         127.0.0.1    331
+        127.0.0.1  255.255.255.255            在链路上         127.0.0.1    331
+  127.255.255.255  255.255.255.255            在链路上         127.0.0.1    331
+      192.168.1.0    255.255.255.0            在链路上      192.168.1.10    311
+     192.168.1.10  255.255.255.255            在链路上      192.168.1.10    311
+    192.168.1.255  255.255.255.255            在链路上      192.168.1.10    311
+        224.0.0.0        240.0.0.0            在链路上         127.0.0.1    331
+        224.0.0.0        240.0.0.0            在链路上      192.168.1.10    311
+  255.255.255.255  255.255.255.255            在链路上         127.0.0.1    331
+  255.255.255.255  255.255.255.255            在链路上      192.168.1.10    311
+===========================================================================
+永久路由:
+  无
+
+IPv6 路由表
+===========================================================================
+活动路由:
+ 接口跃点数网络目标                网关
+  1    331 ::1/128                  在链路上
+ 12    311 fe80::/64                在链路上
+ 12    311 fe80::70be:69c:9cea:6296/128
+                                    在链路上
+  1    331 ff00::/8                 在链路上
+ 12    311 ff00::/8                 在链路上
+===========================================================================
+永久路由:
+  无
+
+C:\Users\Administrator>arp -a
+
+接口: 192.168.1.10 --- 0xc
+  Internet 地址         物理地址              类型
+  192.168.1.1           9c-71-3a-ff-1b-91     动态
+  192.168.1.13          3c-f8-62-06-b5-35     动态
+  192.168.1.255         ff-ff-ff-ff-ff-ff     静态
+  224.0.0.22            01-00-5e-00-00-16     静态
+  224.0.0.100           01-00-5e-00-00-64     静态
+  224.0.0.251           01-00-5e-00-00-fb     静态
+  224.0.0.252           01-00-5e-00-00-fc     静态
+  232.183.126.47        01-00-5e-37-7e-2f     静态
+  239.11.20.1           01-00-5e-0b-14-01     静态
+  239.255.255.250       01-00-5e-7f-ff-fa     静态
+  255.255.255.255       ff-ff-ff-ff-ff-ff     静态
+
+C:\Users\Administrator>tasklist
+
+映像名称                       PID 会话名              会话#       内存使用
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0        920 K
+Registry                        96 Services                   0     96,316 K
+smss.exe                       412 Services                   0      1,088 K
+csrss.exe                      576 Services                   0      4,968 K
+wininit.exe                    708 Services                   0      6,272 K
+csrss.exe                      716 Console                    1      5,808 K
+services.exe                   780 Services                   0      8,376 K
+winlogon.exe                   812 Console                    1     11,572 K
+lsass.exe                      840 Services                   0     17,136 K
+svchost.exe                    984 Services                   0      3,616 K
+svchost.exe                   1008 Services                   0     25,972 K
+fontdrvhost.exe                 76 Console                    1     11,308 K
+fontdrvhost.exe                340 Services                   0      2,604 K
+svchost.exe                    940 Services                   0     14,564 K
+svchost.exe                   1040 Services                   0     10,020 K
+dwm.exe                       1112 Console                    1     92,172 K
+svchost.exe                   1220 Services                   0     10,616 K
+svchost.exe                   1308 Services                   0      5,780 K
+svchost.exe                   1316 Services                   0      9,820 K
+svchost.exe                   1324 Services                   0     11,672 K
+svchost.exe                   1428 Services                   0     13,420 K
+svchost.exe                   1492 Services                   0     11,988 K
+svchost.exe                   1504 Services                   0      5,688 K
+svchost.exe                   1600 Services                   0      6,448 K
+svchost.exe                   1608 Services                   0     13,984 K
+svchost.exe                   1672 Services                   0      7,136 K
+svchost.exe                   1732 Services                   0     10,348 K
+svchost.exe                   1816 Services                   0      6,920 K
+NVDisplay.Container.exe       1952 Services                   0     11,276 K
+svchost.exe                   1996 Services                   0      6,916 K
+svchost.exe                   2032 Services                   0      7,380 K
+svchost.exe                   1276 Services                   0      9,272 K
+svchost.exe                   2052 Services                   0      6,952 K
+svchost.exe                   2060 Services                   0     13,028 K
+svchost.exe                   2072 Services                   0      5,512 K
+svchost.exe                   2104 Services                   0      7,508 K
+svchost.exe                   2180 Services                   0     11,512 K
+NVDisplay.Container.exe       2220 Console                    1     23,316 K
+Memory Compression            2256 Services                   0    275,496 K
+svchost.exe                   2296 Services                   0      7,540 K
+svchost.exe                   2352 Services                   0      6,988 K
+svchost.exe                   2364 Services                   0      7,920 K
+svchost.exe                   2408 Services                   0      7,844 K
+svchost.exe                   2536 Services                   0      8,052 K
+svchost.exe                   2652 Services                   0      8,472 K
+svchost.exe                   2860 Services                   0     13,252 K
+svchost.exe                   2964 Services                   0     16,560 K
+svchost.exe                   2988 Services                   0      6,108 K
+svchost.exe                   2996 Services                   0      9,048 K
+svchost.exe                   2268 Services                   0     17,068 K
+svchost.exe                   3088 Services                   0      7,216 K
+svchost.exe                   3216 Services                   0     16,376 K
+svchost.exe                   3264 Services                   0     19,448 K
+svchost.exe                   3288 Services                   0     11,168 K
+spoolsv.exe                   3396 Services                   0     11,512 K
+svchost.exe                   3420 Services                   0     11,476 K
+CAJSHost.exe                  3576 Services                   0      7,540 K
+svchost.exe                   3592 Services                   0      5,756 K
+svchost.exe                   3604 Services                   0     14,492 K
+svchost.exe                   3620 Services                   0     26,596 K
+svchost.exe                   3640 Services                   0     22,400 K
+svchost.exe                   3732 Services                   0     17,252 K
+svchost.exe                   3760 Services                   0      8,620 K
